@@ -211,8 +211,6 @@ class Rectangle {
     //mat3.fromRotation(this.translationMatrix, this.rotation);
     mat3.scale(this.translationMatrix, this.translationMatrix, this.scale);
 
-    //console.log(this.translationMatrix);
-
     gl.bindBuffer(gl.ARRAY_BUFFER, this.render(gl));
     gl.vertexAttribPointer(
       this.ctx.aVertexPositionId,
